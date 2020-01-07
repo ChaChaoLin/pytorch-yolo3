@@ -2,9 +2,18 @@
 Convert https://pjreddie.com/darknet/yolo/ into pytorch. Currently this repository works on python2 + pytorch 0.3.
 
 Note: python3 is supported on python3 branch.
-### Todos
-- [x] make detect.py works
 
+
+---
+#### Training Using A Pre-Trained Model
+```
+wget https://github.com/eriklindernoren/PyTorch-YOLOv3/blob/master/config/coco.data
+```
+Note: change the coco.data as your own enviroments
+```
+wget https://pjreddie.com/media/files/yolov3.weights
+python train.py cfg/coco.data cfg/yolov3.cfg yolov3.weights
+```
 ---
 #### Detection Using A Pre-Trained Model
 ```

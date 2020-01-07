@@ -150,7 +150,7 @@ class Darknet(nn.Module):
             else:
                 print('unknown type %s' % (block['type']))
         if self.training:
-            return loss
+            return self.loss
         else:
             return out_boxes
 
